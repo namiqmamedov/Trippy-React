@@ -1,6 +1,7 @@
 .hero-section {
   width: 100%;
   height: 100vh;
+  margin-bottom: 70px;
   position: relative;
 }
 .hero-section img {
@@ -39,4 +40,58 @@
   border-radius: 6px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
+}
+
+.destination-index .title {
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.destination-index .destination-thumbnail {
+  display: flex;
+  gap: 0.8rem;
+}
+.destination-index .destination-thumbnail img {
+  width: 49%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.destination-index .destination-thumbnail img:last-child {
+  margin-top: -37px;
+}
+.destination-index .destination-card {
+  padding-top: 80px;
+  align-items: center;
+}
+.destination-index .destination-card .destination-content h2 {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+}
+.destination-index .destination-card .destination-content p {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  max-width: 555px;
+}
+.destination-index .destination-card-reverse {
+  padding-top: 80px;
+  align-items: center;
+}
+.destination-index .destination-card-reverse .destination-content h2 {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  padding-left: 46px;
+}
+.destination-index .destination-card-reverse .destination-content p {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  max-width: 555px;
+  padding-left: 46px;
 }/*# sourceMappingURL=home.css.map */
