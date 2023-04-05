@@ -1,0 +1,42 @@
+footer {
+    background: black;
+    height: 500px;
+
+    .footer-index {
+        padding: 60px 0;
+
+        h1,
+        a,
+        h4,
+        .footer-title {
+            color: white;
+        }
+
+        .footer-top {
+            margin-bottom: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .footer-icon{
+                display: flex;
+                gap: 0.8rem;
+                svg{
+                    fill: white;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .router-link {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
