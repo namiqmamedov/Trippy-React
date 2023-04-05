@@ -2,7 +2,10 @@ import React from 'react'
 import heroImage from '../../assets/images/hero-image.jpg'
 import destination01 from '../../assets/images/destination01.jpg'
 import destination02 from '../../assets/images/destination02.jpg'
-import {Container,Col,Row} from 'reactstrap'
+import trips01 from '../../assets/images/trips01.jpg'
+import trips02 from '../../assets/images/trips02.jpg'
+import trips03 from '../../assets/images/trips03.jpg'
+import {Container,Col,Row,Card,CardBody,CardTitle,CardSubtitle,CardText,Button} from 'reactstrap'
 import '../../styles/home.css'
 
 
@@ -10,7 +13,7 @@ import '../../styles/home.css'
 const Home = () => {
     return (
         <>
-        <section>
+      <section>
         <div className="hero-section">
           <img src={heroImage} alt="hero image" />
           <div className="hero-text">
@@ -53,6 +56,69 @@ const Home = () => {
             </div>
             </Row>
           </Container>
+        </div>
+      </section>
+
+      <section>
+        <div id="trips-index"  className="trips-index">
+        <h1 className="title text-center">Recent Trips</h1>
+        <p className='subtitle text-center'>You can discover unique destinations using Google Maps.</p>
+        <Container>
+            <Row>
+            <div className="trip-card">
+                <Card>
+                <div className="card-thumbnail">
+                <img
+                    alt="Sample"
+                    src={trips01}
+                />
+                </div>
+            <CardBody>
+                <CardTitle tag="h4">
+                Trip in Indonesia
+                </CardTitle>
+                <CardText>
+                Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea.
+                </CardText>
+            </CardBody>
+                </Card>
+                <Card
+    >
+    <div className="card-thumbnail">
+                <img
+                    alt="Sample"
+                    src={trips02}
+                />
+                </div>
+            <CardBody>
+                <CardTitle tag="h4">
+                Trip in Malaysia
+                </CardTitle>
+                <CardText>
+                Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences.
+                </CardText>
+            </CardBody>
+                </Card>
+                <Card
+    >
+    <div className="card-thumbnail">
+                <img
+                    alt="Sample"
+                    src={trips03}
+                />
+                </div>
+            <CardBody>
+                <CardTitle tag="h4">
+                Trip in France
+                </CardTitle>
+                <CardText>
+                France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower.
+                </CardText>
+            </CardBody>
+                </Card>
+            </div>
+            </Row>
+        </Container>
         </div>
       </section>
       </>
