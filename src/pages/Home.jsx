@@ -1,12 +1,12 @@
 import React from 'react'
-import heroImage from '../../assets/images/hero-image.jpg'
-import destination01 from '../../assets/images/destination01.jpg'
-import destination02 from '../../assets/images/destination02.jpg'
-import trips01 from '../../assets/images/trips01.jpg'
-import trips02 from '../../assets/images/trips02.jpg'
-import trips03 from '../../assets/images/trips03.jpg'
+import heroImage from '../../src/assets/images/hero-image.jpg'
+import destination01 from '../../src/assets/images/destination01.jpg'
+import destination02 from '../../src/assets/images/destination02.jpg'
+import trips01 from '../../src/assets/images/trips01.jpg'
+import trips02 from '../../src/assets/images/trips02.jpg'
+import trips03 from '../../src/assets/images/trips03.jpg'
 import {Container,Col,Row,Card,CardBody,CardTitle,CardSubtitle,CardText,Button} from 'reactstrap'
-import '../../styles/home.css'
+import '../../src/styles/home.css'
 
 
 

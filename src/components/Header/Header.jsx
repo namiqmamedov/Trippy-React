@@ -5,12 +5,32 @@ import {AiFillHome} from 'react-icons/ai'
 import {AiFillInfoCircle} from 'react-icons/ai'
 import {MdWork} from 'react-icons/md'
 import {RiContactsBook2Fill} from 'react-icons/ri'
+import {NavLink, Link} from 'react-router-dom'
 
+const nav_links = [
+    {
+        display: 'Home',
+        path: '/home',
+        icon: <AiFillHome/>
+    }, {
+        display: 'About',
+        path: '/about',
+        icon: <AiFillInfoCircle/>
+    }, {
+        display: 'Service',
+        path: '/service',
+        icon: <MdWork/>
+    }, {
+        display: 'Contact',
+        path: '/contact',
+        icon: <RiContactsBook2Fill/>
+    }
+]
 
 const Header = () => {
     return (
         <header>
-           <Container>
+            <Container>
                 <Row>
                     <div className="header-index">
                         <div className="header-logo">
@@ -20,37 +40,21 @@ const Header = () => {
                         </div>
                         <div className="header-content">
                             <ul>
-                                <li>
-                                    <a href="#">
-                                        <AiFillHome/>
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    
-                                    <a href="#">
-                                    <AiFillInfoCircle/>
-
-                                        About
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                    <MdWork/>
-                                        Service
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                    <RiContactsBook2Fill/>
-                                        Contact
-                                    </a>
-                                </li>
+                                {nav_links.map((item, index) => (
+                                    <li key={index}>
+                                    <NavLink to={item.path}>
+                                        {item.icon}
+                                        {item.display}
+                                    </NavLink>
+                                    </li>
+                                ))}
+                                {
                                 <li>
                                     <a href="#">
                                         Sign Up
                                     </a>
-                                </li>
+                                </li> 
+                                }
                             </ul>
                         </div>
                     </div>
