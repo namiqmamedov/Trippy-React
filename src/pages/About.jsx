@@ -10,8 +10,6 @@ const About = () => {
     <section className='common__section'>
             <h1>About</h1>
           <img src={aboutImg} alt="about image" />
-          <div className="common__text">
-          </div>
     </section>
 
     <section className='about__content'>

@@ -2,10 +2,8 @@ import React from 'react'
 import heroImage from '../../src/assets/images/hero-image.jpg'
 import destination01 from '../../src/assets/images/destination01.jpg'
 import destination02 from '../../src/assets/images/destination02.jpg'
-import trips01 from '../../src/assets/images/trips01.jpg'
-import trips02 from '../../src/assets/images/trips02.jpg'
-import trips03 from '../../src/assets/images/trips03.jpg'
-import {Container,Col,Row,Card,CardBody,CardTitle,CardSubtitle,CardText,Button} from 'reactstrap'
+import {Container,Col,Row,Card,CardBody,CardTitle,CardText} from 'reactstrap'
+import {trips} from '../data/trips'
 import '../../src/styles/home.css'
 
 
@@ -66,56 +64,24 @@ const Home = () => {
         <Container>
             <Row>
             <div className="trip-card">
-                <Card>
+              {trips.map((trip,i) =>(
+                <Card key={i}>
                 <div className="card-thumbnail">
                 <img
                     alt="Sample"
-                    src={trips01}
+                    src={trip.image}
                 />
                 </div>
             <CardBody>
                 <CardTitle tag="h4">
-                Trip in Indonesia
+                {trip.title}
                 </CardTitle>
                 <CardText>
-                Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea.
+                {trip.text}
                 </CardText>
             </CardBody>
                 </Card>
-                <Card
-    >
-    <div className="card-thumbnail">
-                <img
-                    alt="Sample"
-                    src={trips02}
-                />
-                </div>
-            <CardBody>
-                <CardTitle tag="h4">
-                Trip in Malaysia
-                </CardTitle>
-                <CardText>
-                Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences.
-                </CardText>
-            </CardBody>
-                </Card>
-                <Card
-    >
-    <div className="card-thumbnail">
-                <img
-                    alt="Sample"
-                    src={trips03}
-                />
-                </div>
-            <CardBody>
-                <CardTitle tag="h4">
-                Trip in France
-                </CardTitle>
-                <CardText>
-                France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower.
-                </CardText>
-            </CardBody>
-                </Card>
+              ))}
             </div>
             </Row>
         </Container>
