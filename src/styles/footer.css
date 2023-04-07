@@ -2,9 +2,6 @@ footer {
   background: black;
   height: 500px;
 }
-footer .footer-index {
-  padding: 60px 0;
-}
 footer .footer-index h1,
 footer .footer-index a,
 footer .footer-index h4,
@@ -44,4 +41,74 @@ footer .footer-index .router-link a {
   font-size: 17.6px;
   padding-bottom: 0.4rem;
   font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+  footer {
+    height: 550px;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .router-link {
+    width: 50%;
+  }
+  footer .footer-top {
+    padding-top: 35px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  footer {
+    height: auto;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+  }
+  footer .router-link {
+    width: 50%;
+  }
+  footer .footer-top {
+    padding-top: 35px;
+  }
+  footer .footer-index {
+    padding-top: 63px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  footer {
+    height: auto;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+  }
+  footer .router-link {
+    width: 50%;
+  }
+  footer .footer-top {
+    padding-top: 35px;
+  }
+  footer .footer-index {
+    padding-top: 63px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    height: auto;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+  }
+  footer .footer-top {
+    padding-top: 35px;
+  }
+  footer .footer-index {
+    padding-top: 46px;
+  }
 }/*# sourceMappingURL=footer.css.map */

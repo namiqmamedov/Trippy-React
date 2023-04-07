@@ -2,7 +2,7 @@ import React from 'react'
 import heroImage from '../../src/assets/images/hero-image.jpg'
 import destination01 from '../../src/assets/images/destination01.jpg'
 import destination02 from '../../src/assets/images/destination02.jpg'
-import {Container,Col,Row,Card,CardBody,CardTitle,CardText} from 'reactstrap'
+import {Container,Row,Card,CardBody,CardTitle,CardText} from 'reactstrap'
 import {trips} from '../data/trips'
 import '../../src/styles/home.css'
 
@@ -48,7 +48,7 @@ const Home = () => {
                 <img src={destination02} alt="destination img" />
                 </div>
                 <div className="destination-content col-lg-6">
-                    <h2>Taal Volcano, Batangas</h2>
+                    <h2>Mt. Daguldul, Batangas</h2>
                     <p>If you’re looking for a hike that’s a little more challenging but still good for a beginner mountaineer, check out Mt. Daguldul in San Juan, Batangas. You’ll start your hike from the beach and pass through tropical forest, different rock formations, and small streams. There’s a small store halfway up the trail where you can take a break and drink buko juice, and though the summit itself may not have the best view, the breeze is fantastic. Once you’ve made it back down, head straight to the beach for a refreshing, well-deserved swim.</p>
                 </div>
             </div>

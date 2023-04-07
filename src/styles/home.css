@@ -15,7 +15,8 @@
 .hero-section .hero-text {
   position: absolute;
   top: 50%;
-  left: 31%;
+  left: 0;
+  right: 0;
   text-align: center;
 }
 .hero-section .hero-text h1 {
@@ -136,4 +137,127 @@
 .trip-card .card p {
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-section .hero-text {
+    top: 46%;
+    left: 0;
+  }
+  .destination-index .title {
+    max-width: 481px;
+    margin: 0 auto;
+  }
+  .destination-index .destination-content {
+    order: 1;
+  }
+  .destination-index .destination-card {
+    flex-direction: column;
+  }
+  .destination-index .destination-card .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card-reverse {
+    flex-direction: column;
+  }
+  .destination-index .destination-card-reverse .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card-reverse p, .destination-index .destination-card-reverse h2 {
+    padding-left: 0 !important;
+  }
+  .trip-card {
+    flex-direction: column;
+  }
+  .trip-card .card {
+    width: 100% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero-section .hero-text {
+    top: 46%;
+    left: 0;
+    right: 0;
+  }
+  .destination-index .title {
+    max-width: 481px;
+    margin: 0 auto;
+  }
+  .destination-index .destination-content {
+    order: 1;
+  }
+  .destination-index .destination-card {
+    flex-direction: column;
+  }
+  .destination-index .destination-card .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card-reverse {
+    flex-direction: column;
+  }
+  .destination-index .destination-card-reverse .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card-reverse p, .destination-index .destination-card-reverse h2 {
+    padding-left: 0 !important;
+  }
+  .trip-card {
+    flex-direction: column;
+  }
+  .trip-card .card {
+    width: 100% !important;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .hero-section .hero-text {
+    top: 46%;
+    left: 0;
+    right: 0;
+  }
+  .destination-index .title {
+    max-width: 481px;
+    margin: 0 auto;
+  }
+  .destination-index .destination-content {
+    order: 1;
+  }
+  .destination-index .destination-card {
+    flex-direction: column;
+  }
+  .destination-index .destination-card .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card-reverse {
+    flex-direction: column;
+  }
+  .destination-index .destination-card-reverse .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card-reverse p, .destination-index .destination-card-reverse h2 {
+    padding-left: 0 !important;
+  }
+  .trip-card {
+    flex-direction: column;
+  }
+  .trip-card .card {
+    width: 100% !important;
+  }
+}
+@media (min-width: 992px) {
+  .destination-index .title {
+    max-width: 481px;
+    margin: 0 auto;
+  }
+  .destination-index .destination-card .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card .destination-content p {
+    padding-right: 23px;
+  }
+  .destination-index .destination-card-reverse .destination-content {
+    padding-top: 30px;
+  }
+  .destination-index .destination-card-reverse p, .destination-index .destination-card-reverse h2 {
+    padding-left: 23px;
+  }
 }/*# sourceMappingURL=home.css.map */

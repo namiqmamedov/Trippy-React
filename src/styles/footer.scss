@@ -3,7 +3,6 @@ footer {
     height: 500px;
 
     .footer-index {
-        padding: 60px 0;
 
         h1,
         a,
@@ -52,4 +51,93 @@ footer {
             }
         }
     }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    footer{
+        height: 550px;
+        .footer-content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .router-link{
+            width: 50%;
+        }
+
+        .footer-top{
+            padding-top: 35px;
+        }
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    footer{
+        height: auto;
+        .footer-content{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 35px;
+        }
+        .router-link{
+            width: 50%;
+        }
+
+        .footer-top{
+            padding-top: 35px;
+        }
+
+        .footer-index{
+            padding-top: 63px;
+        }
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+
+    footer{
+        height: auto;
+        .footer-content{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 35px;
+        }
+        .router-link{
+            width: 50%;
+        }
+
+        .footer-top{
+            padding-top: 35px;
+        }
+
+        .footer-index{
+            padding-top: 63px;
+        }
+    }
+
+}
+
+@media (min-width: 992px){
+
+    footer{
+        height: auto;
+        .footer-content{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 45px;
+        }
+
+        .footer-top{
+            padding-top: 35px;
+        }
+
+        .footer-index{
+            padding-top: 46px;
+        }
+    }
+
 }

@@ -43,10 +43,141 @@ header .header-index .header-content ul li:last-child {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+header .header-index .header-content .mobile-menu-icon {
+  display: none;
+}
 header .header-index .header-logo h1 {
   color: black;
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+  .header-content ul {
+    display: none !important;
+  }
+  .header-content ul li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-content ul li:last-child {
+    margin-bottom: 35px;
+  }
+  .header-content .nav-links-active {
+    position: absolute;
+    left: 0;
+    top: 86%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 13px;
+    gap: 1rem;
+    margin-bottom: 0;
+    display: flex !important;
+    flex-direction: column;
+    padding-top: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-left: 0;
+  }
+  .header-content .nav-links-active ul li {
+    text-align: center;
+    width: 100%;
+  }
+  .header-content .mobile-menu-icon {
+    display: block !important;
+  }
+  .header-content .mobile-menu-icon svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .header-content ul {
+    left: -100%;
+    position: absolute;
+  }
+  .header-content ul li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-content ul li:last-child {
+    margin-bottom: 35px;
+  }
+  .header-content .nav-links-active {
+    position: absolute;
+    top: 86%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 13px;
+    gap: 1rem;
+    margin-bottom: 0;
+    display: flex !important;
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-left: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .header-content .nav-links-active ul li {
+    text-align: center;
+    width: 100%;
+  }
+  .header-content .mobile-menu-icon {
+    display: block !important;
+  }
+  .header-content .mobile-menu-icon svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    display: block;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .header-content ul {
+    left: -100%;
+    position: absolute;
+  }
+  .header-content ul li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-content ul li:last-child {
+    margin-bottom: 35px;
+  }
+  .header-content .nav-links-active {
+    position: absolute;
+    top: 86%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 13px;
+    gap: 1rem;
+    margin-bottom: 0;
+    display: flex !important;
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-left: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .header-content .nav-links-active ul li {
+    text-align: center;
+    width: 100%;
+  }
+  .header-content .mobile-menu-icon {
+    display: block !important;
+  }
+  .header-content .mobile-menu-icon svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    display: block;
+  }
 }/*# sourceMappingURL=header.css.map */

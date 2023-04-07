@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import '../../styles/header.css'
 import {AiFillHome} from 'react-icons/ai'
@@ -6,6 +6,8 @@ import {AiFillInfoCircle} from 'react-icons/ai'
 import {MdWork} from 'react-icons/md'
 import {RiContactsBook2Fill} from 'react-icons/ri'
 import {NavLink, Link} from 'react-router-dom'
+import {RxHamburgerMenu} from 'react-icons/rx'
+import {IoMdClose} from 'react-icons/IO'
 
 const nav_links = [
     {
@@ -28,18 +30,21 @@ const nav_links = [
 ]
 
 const Header = () => {
+
+    const [navbar, setNavbar] = useState(false)
+
     return (
         <header>
             <Container>
                 <Row>
                     <div className="header-index">
                         <div className="header-logo">
-                            <a href='#'>
+                            <Link to='/'>
                                 <h1>Trippy</h1>
-                            </a>
+                            </Link>
                         </div>
                         <div className="header-content">
-                            <ul>
+                            <ul className={navbar ? "nav-links-active" : "nav-links"} onClick={() => setNavbar(false)}>
                                 {nav_links.map((item, index) => (
                                     <li key={index}>
                                     <NavLink to={item.path}>
@@ -56,6 +61,9 @@ const Header = () => {
                                 </li> 
                                 }
                             </ul>
+                            <div className='mobile-menu-icon' onClick={() => setNavbar(!navbar)}>
+                                {navbar ? <IoMdClose /> : <RxHamburgerMenu/>}
+                            </div>
                         </div>
                     </div>
                 </Row>

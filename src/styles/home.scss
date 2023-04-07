@@ -15,7 +15,8 @@
     .hero-text {
         position: absolute;
         top: 50%;
-        left: 31%;
+        left: 0;
+        right: 0;
         text-align: center;
 
         h1 {
@@ -129,7 +130,7 @@
         width: 33% !important;
         padding: 1rem 0.8rem;
 
-        .card-thumbnail{
+        .card-thumbnail {
             overflow: hidden;
             height: 250px;
             border-radius: 7px;
@@ -139,28 +140,218 @@
                 width: 100%;
                 border-radius: 7px;
                 transition: 0.3s ease-in-out;
+
                 &:hover {
                     transform: scale(1.3);
                 }
             }
         }
 
-        .card-body{
+        .card-body {
             padding: 0;
         }
 
-        .card-title{
+        .card-title {
             font-weight: bold;
-        font-size: 20.8px;
-        margin-top: 16px;
-        margin-bottom: 10px;
-        font-family: 'Poppins', sans-serif;
+            font-size: 20.8px;
+            margin-top: 16px;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
         }
 
-        p{
+        p {
             margin-bottom: 20px;
             font-family: 'Poppins', sans-serif;
         }
-        
+
     }
 }
+
+
+@media only screen and (max-width: 576px) {
+    .hero-section {
+        .hero-text {
+            top: 46%;
+            left: 0 ;
+        }
+    }
+
+    .destination-index{
+        .title{
+            max-width: 481px;
+            margin: 0 auto;
+        }
+
+        .destination-content{
+            order: 1;
+        }
+
+        .destination-card{
+            flex-direction: column;
+
+            .destination-content{
+                padding-top: 30px;
+            }
+        }
+
+        .destination-card-reverse{
+            flex-direction: column;
+
+            .destination-content{
+                padding-top: 30px;
+            }
+
+            p,h2{
+                padding-left: 0 !important;
+            }
+        }
+    }
+
+    .trip-card{
+        flex-direction: column;
+
+        .card{
+            width: 100% !important;
+        }
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-section {
+        .hero-text {
+            top: 46%;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .destination-index{
+        .title{
+            max-width: 481px;
+            margin: 0 auto;
+        }
+
+        .destination-content{
+            order: 1;
+        }
+
+        .destination-card{
+            flex-direction: column;
+
+            .destination-content{
+                padding-top: 30px;
+            }
+        }
+
+        .destination-card-reverse{
+            flex-direction: column;
+
+            .destination-content{
+                padding-top: 30px;
+            }
+
+            p,h2{
+                padding-left: 0 !important;
+            }
+        }
+    }
+
+    .trip-card{
+        flex-direction: column;
+
+        .card{
+            width: 100% !important;
+        }
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .hero-section {
+        .hero-text {
+            top: 46%;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .destination-index{
+        .title{
+            max-width: 481px;
+            margin: 0 auto;
+        }
+
+        .destination-content{
+            order: 1;
+        }
+
+        .destination-card{
+            flex-direction: column;
+
+            .destination-content{
+                padding-top: 30px;
+            }
+        }
+
+        .destination-card-reverse{
+            flex-direction: column;
+
+            .destination-content{
+                padding-top: 30px;
+            }
+
+            p,h2{
+                padding-left: 0 !important;
+            }
+        }
+    }
+
+    .trip-card{
+        flex-direction: column;
+
+        .card{
+            width: 100% !important;
+        }
+    }
+
+}
+
+@media (min-width: 992px){
+
+    .destination-index{
+        .title{
+            max-width: 481px;
+            margin: 0 auto;
+        }
+   
+
+        .destination-card{
+
+            .destination-content{
+                padding-top: 30px;
+
+                p{
+                    padding-right: 23px;
+                }
+            }
+        }
+
+        .destination-card-reverse{
+
+            .destination-content{
+                padding-top: 30px;
+            }
+
+            p,h2{
+                padding-left: 23px;
+            }
+
+
+        }
+    }
+
+
+}
+
